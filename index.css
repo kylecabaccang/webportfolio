@@ -5,16 +5,23 @@
 	box-sizing: border-box;
 }
 
+.sections-subtitle {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	font-size:3rem;
+}
+
 /*Navbar*/
+nav a {
+	font-family: 'VT323', monospace;
+	font-size: 2rem;
+}
+
+
 .navbar-icon {
 	width:40px;
 	border-radius: 50%;
 	padding-bottom:15%;
-}
-
-nav a {
-	font-family: 'VT323', monospace;
-	font-size: 2rem;
 }
 
 .navbar-name {
@@ -22,26 +29,19 @@ nav a {
 	margin-top: 50%;
 }
 
+.nav-link:hover {
+	color:red;
+    background-color: #6D5D6E;
+}
 
-
-/*.sticky-nav {
-	position:fixed;
-
-}*/
 
 /*Landing Page*/
 
-.landing1background {
-	background-color: #393646; 
-}
-.landing2background {
-	background-color: #2C3333;
+.landingbackground {
+	background-color: #2C3333; 
 }
 
 /*Landing Page Section*/
-.zedpic {
-	border-radius: 100%;
-}
 
 .techpic {
 	margin-top: 20%;
@@ -58,14 +58,44 @@ nav a {
 
 .intro2 {
 	font-family: 'Montserrat', sans-serif;
+	width:80%;
+	margin-left:10%;
+	font-weight: 900;
 }
 
+
 /*Projects*/
+
 .projectsbackground {
 	background-color: #393646;
+	padding-top:10%;
+}
+
+.card-text {
+	padding-left:5%;
+}
+
+.list-container {
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5%;
+	padding-left:10%;
 }
 
 /*Contacts*/
 .contactsbackground {
 	background-color: #2C3333;
+	padding-top:10%;
+}
+
+/*Tools*/
+.toolsbackground {
+	background-color: #393646;
+	padding-top:10%;
+}
+
+/*Footer*/
+.footerbackground {
+	background-color:#6D5D6E;
+	text-align: center;
 }
