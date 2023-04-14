@@ -1,0 +1,71 @@
+/*CSS Reset*/
+* {
+	padding:0;
+	border:0;
+	box-sizing: border-box;
+}
+
+/*Navbar*/
+.navbar-icon {
+	width:40px;
+	border-radius: 50%;
+	padding-bottom:15%;
+}
+
+nav a {
+	font-family: 'VT323', monospace;
+	font-size: 2rem;
+}
+
+.navbar-name {
+	font-size: 3rem;
+	margin-top: 50%;
+}
+
+
+
+/*.sticky-nav {
+	position:fixed;
+
+}*/
+
+/*Landing Page*/
+
+.landing1background {
+	background-color: #393646; 
+}
+.landing2background {
+	background-color: #2C3333;
+}
+
+/*Landing Page Section*/
+.zedpic {
+	border-radius: 100%;
+}
+
+.techpic {
+	margin-top: 20%;
+}
+
+.introduction {
+	margin-top:15%;
+}
+
+.intro1 {
+	font-family: 'Great Vibes', cursive;
+	font-size: 4rem;
+}
+
+.intro2 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Projects*/
+.projectsbackground {
+	background-color: #393646;
+}
+
+/*Contacts*/
+.contactsbackground {
+	background-color: #2C3333;
+}
