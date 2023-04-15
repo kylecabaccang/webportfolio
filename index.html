@@ -40,6 +40,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
+		<link rel="icon" type="image/gif" href="./images/haloofthesun.png">
+
 		<title>Zedekiah Cabaccang - Portfolio</title>
 	</head>
 
@@ -53,18 +55,21 @@
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse d-xl-flex justify-content-center" id="navbarNav">
-		    <ul class="navbar-nav pr-3">
+		    <ul class="navbar-nav pr-4 pl-4">
 		      <li class="nav-item">
-		        <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#projects">Projects</a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#about-me">About_Me</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#contact">Contact_Me</a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#projects">Projects</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#tools">Tools</a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#tools">Tools</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#contact">Contact_Me</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -89,6 +94,58 @@
 			</header>
 
 			<!-- Header/Landing Section End -->
+
+			<!-- About Me Section Start -->
+			<section id="about-me">
+				<div class="container-fluid contactsbackground text-light min-vh-100 pb-3">
+						<div class="row mt-5">
+							<p class="mb-3 sections-subtitle col-lg-12">About Me</p>
+
+							<div class="d-flex justify-content-center col-lg-12">
+								<img class="zedpic align-center" src="./images/zedpic.jpg">
+							</div>
+
+							<!-- Profile Picture Start -->
+							<div class="d-flex justify-content-center col-lg-12">
+								<p class="aboutme-text1 mb-5 mt-4 text-center">I am a former Customer Support Representative and now pursuing a web developer career which is in-line with the college degree that I graduated in.</p>
+							</div>
+							<!-- Profile Picture End -->
+
+
+							<!-- First Skill Start -->
+							<div class="d-flex justify-content-center col-lg-6">
+								<img class="laptop-pic align-center" src="./images/laptop.webp">
+							</div>
+
+							<div class="d-flex justify-content-center col-lg-6 justify-content-sm-center justify-content-lg-left">
+								<p class="aboutme-text2 mb-5 mt-4 text-justify">I started learning to code when I was in college (s.y 2014-2019). I chose this path because I was exposed to technology at a very young age and game development used to be my dream, though I found out that web development is just as fun and creative.</p>
+							</div>
+							<!-- First Skill End -->
+
+							<!-- Second Skill Start -->
+							<div class="d-flex flex-lg-row-reverse flex-column">
+								<div class="d-flex justify-content-center col-lg-6">
+									<img class="analog-pic align-center" src="./images/analog.webp">
+								</div>
+
+
+								<div class="d-flex justify-content-center col-lg-6 justify-content-sm-center justify-content-lg-left">
+									<p class="aboutme-text3 mb-5 mt-4 text-justify">Speaking of game development, playing videogames is also my passion and one of my best skills as I am familiar to all kinds of videogame mechanics, creativity, art direction, musical score, plot direction, and more. The Silent Hill and Metal Gear Solid franchise are my all time favorite videogames.</p>
+								</div>
+							</div>
+							<!-- Second Skill End -->
+
+
+						</div>
+				</div>
+				
+			</section>
+			<!-- About Me Section End -->
+
+
+
+
+
 
 			<!-- Motivational Quote Start -->
 			<section id="motivationalbg-image">
@@ -220,48 +277,6 @@
 			</section>
 			<!-- Projects Section End -->
 
-			<!-- Contact Section Start -->
-			<section id="contact">
-				<div class="contactsbackground text-light min-vh-100">
-					<p class="mb-3 sections-subtitle">Contact Me</p>
-						<!-- Container for Contact Me Section Start -->
-						<div class="container bg-dark col-sm-12 col-md-8 col-xl-4 pt-4 pb-4 rounded">
-							<form action="#">
-								<!-- Name Textbox -->
-							  <div class="form-group">
-							    <label for="FormControlInput1">Name</label>
-							    <input type="text" class="form-control" id="FormControlInput1" placeholder="Your Name" required>
-							  </div>
-
-							 	 <!-- Email Textbox -->
-							  <div class="form-group">
-							    <label for="FormControlInput2">Email address</label>
-							    <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com" required>
-							  </div>
-
-							   <!-- Contact Number Textbox -->
-							  <div class="form-group">
-							    <label for="FormControlInput3">Contact Number</label>
-							    <input type="number" class="form-control" id="FormControlInput3" placeholder="+63 900 000 0000" required>
-							  </div>
-							  
-							  <div class="form-group">
-							    <label for="exampleFormControlTextarea1">Message</label>
-							    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-							  </div>
-							  	<button type="submit" class="btn btn-secondary text-light mb-2">Send Email</button>
-
-							</form>
-
-
-						</div>
-						<!-- Container for Contact Me Section End -->
-
-					</div>
-				</div>
-			</section>
-			<!-- Contact Section End -->
-
 			<!-- Tools Section Start -->
 			<section id="tools">
 				<div class="toolsbackground text-light min-vh-100">
@@ -348,6 +363,48 @@
 			</section>
 			<!-- Tools Section End -->
 
+
+			<!-- Contact Section Start -->
+			<section id="contact">
+				<div class="contactsbackground text-light min-vh-100 pb-3">
+					<p class="mb-3 sections-subtitle">Get In Touch</p>
+						<p class="contact-invitation1 mb-5">If you love videogames and/or programming as much as I do.</p>
+						<!-- Container for Contact Me Section Start -->
+						<div class="container bg-dark col-sm-12 col-md-8 col-xl-4 pt-4 pb-4 rounded">
+							<p class="contact-invitation2">Love videogames and/or programming as much as I do? Let's talk about how awesome they are! We can code and play videogames afterwards!</p>
+							<form action="#">
+								<!-- Name Textbox -->
+							  <div class="form-group">
+							    <label for="FormControlInput1">Name</label>
+							    <input type="text" class="form-control" id="FormControlInput1" placeholder="Your Name" required>
+							  </div>
+
+							 	 <!-- Email Textbox -->
+							  <div class="form-group">
+							    <label for="FormControlInput2">Email address</label>
+							    <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com" required>
+							  </div>
+
+							   <!-- Contact Number Textbox -->
+							  <div class="form-group">
+							    <label for="FormControlInput3">Contact Number</label>
+							    <input type="number" class="form-control" id="FormControlInput3" placeholder="+63 900 000 0000" required>
+							  </div>
+							  
+							  <div class="form-group">
+							    <label for="exampleFormControlTextarea1">Message</label>
+							    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+							  </div>
+							  	<button type="submit" class="btn btn-secondary text-light mb-2">Send Email</button>
+
+							</form>
+						</div>
+						<!-- Container for Contact Me Section End -->
+				</div>
+				
+			</section>
+			<!-- Contact Section End -->
+
 			<!-- Footer -->
 			<footer class="footerbackground text-light">
 				© 2023 Zedekiah Cabaccang
@@ -361,3 +418,4 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 	</body>
 </html>
+
