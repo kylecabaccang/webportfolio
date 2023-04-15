@@ -5,6 +5,11 @@
 	box-sizing: border-box;
 }
 
+body {
+	/* just need to black-out the background just because, well, if you're really curious, it's for the paradiseintech pic	*/
+	background-color: black;
+}
+
 .sections-subtitle {
 	font-family: 'Merriweather', serif;
 	text-align: center;
@@ -41,8 +46,6 @@ nav a {
 	background-color: #2C3333; 
 }
 
-/*Landing Page Section*/
-
 .techpic {
 	margin-top: 20%;
 }
@@ -63,6 +66,44 @@ nav a {
 	font-weight: 900;
 }
 
+/*Motivational Quote Page*/
+#motivationalbg-image {
+		background-image:url("./images/paradiseintech.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;		
+
+}
+
+.front-motivationalbg {
+		background-color: rgba(0, 0, 0, 0.5);
+		min-height: 40vh;
+		min-width: 90vw;
+}
+
+.motivational-container {
+	padding-top:5%;
+	overflow: hidden;
+}
+
+.motivational-1 {
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size:3rem;
+}
+
+.motivational-2 {
+	color: white;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-size:1.5rem;
+	margin-bottom:0;
+	padding-bottom:1%;
+
+
+}
 
 /*Projects*/
 
@@ -73,6 +114,7 @@ nav a {
 
 .card-text {
 	padding-left:5%;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .list-container {
@@ -98,4 +140,27 @@ nav a {
 .footerbackground {
 	background-color:#6D5D6E;
 	text-align: center;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 }
+
+
+
+/*Media Query*/
+
+/*Motivational Quote Page*/
+@media only screen and (max-width: 1023px) {
+  #motivationalbg-image {
+    background-attachment: scroll;
+  }
+
+  .front-motivationalbg {
+  		background-color: rgba(0, 0, 0, 0.5);
+  		min-height: 21vh;
+  		min-width: 70vw;
+  }
+
+}
+
+
+
