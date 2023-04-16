@@ -175,8 +175,8 @@ nav a {
 
 .list-container {
 	font-family: 'Montserrat', sans-serif;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-radius: 5%;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 3%;
 	padding-left:10%;
 }
 
@@ -185,6 +185,10 @@ nav a {
 .toolsbackground {
 	background-color: #2C3333;
 	padding-top:10%;
+}
+
+.tools-subtitle {
+	font-family: 'Montserrat', sans-serif;
 }
 
 /*Footer*/
@@ -230,7 +234,7 @@ nav a {
   }
 
   .front-motivationalbg {
-  		background-color: rgba(0, 0, 0, 0.5);
+  		background-color: rgba(0, 0, 0, 0.4);
   		min-height: 21vh;
   		min-width: 70vw;
   }
