@@ -50,6 +50,14 @@
 		    function redirectToProject3() {
 		      window.location.href = "https://fullstack-1zw409ygk-capstone-3-cabaccang.vercel.app/";
 		    }
+
+		    // Function to collapse the navbar when a link is clicked
+		    function collapseNavbar() {
+		      var navbarCollapse = document.querySelector('.navbar-collapse');
+		      if (navbarCollapse.classList.contains('show')) {
+		        navbarCollapse.classList.remove('show');
+		      }
+		    }
 		</script>
 
 		<title>Zedekiah Cabaccang - Portfolio</title>
@@ -67,19 +75,19 @@
 		  <div class="collapse navbar-collapse d-xl-flex justify-content-center" id="navbarNav">
 		    <ul class="navbar-nav pr-4 pl-4">
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#" onclick="collapseNavbar()">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#about-me">About_Me</a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#about-me" onclick="collapseNavbar()">About_Me</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#projects">Projects</a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#projects" onclick="collapseNavbar()">Projects</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#tools">Tools</a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#tools" onclick="collapseNavbar()">Tools</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#contact">Contact_Me</a>
+		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#contact" onclick="collapseNavbar()">Contact_Me</a>
 		      </li>
 		    </ul>
 		  </div>
