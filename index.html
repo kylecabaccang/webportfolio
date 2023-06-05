@@ -58,6 +58,30 @@
 		        navbarCollapse.classList.remove('show');
 		      }
 		    }
+
+		    // Smooth scrolling when clicking on a link with the "smooth-scroll" class
+		      document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
+		        anchor.addEventListener('click', function (e) {
+		          e.preventDefault();
+
+		          // Get the target element's ID from the href attribute
+		          const targetId = this.getAttribute('href');
+
+		          // Use the target ID to find the actual target element
+		          const target = document.querySelector(targetId);
+
+		          if (target) {
+		            // Calculate the distance from the top of the page to the target element
+		            const offsetTop = target.offsetTop;
+
+		            // Use the scrollIntoView API with behavior: 'smooth' for smooth scrolling
+		            window.scrollTo({
+		              top: offsetTop,
+		              behavior: 'smooth'
+		            });
+		          }
+		        });
+		      });
 		</script>
 
 		<title>Zedekiah Cabaccang - Portfolio</title>
@@ -75,19 +99,19 @@
 		  <div class="collapse navbar-collapse d-xl-flex justify-content-center" id="navbarNav">
 		    <ul class="navbar-nav pr-4 pl-4">
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#" onclick="collapseNavbar()">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link pr-4 pl-4 smooth-scroll" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#" onclick="collapseNavbar()">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#about-me" onclick="collapseNavbar()">About_Me</a>
+		        <a class="nav-link pr-4 pl-4 smooth-scroll" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#about-me" onclick="collapseNavbar()">About_Me</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#projects" onclick="collapseNavbar()">Projects</a>
+		        <a class="nav-link pr-4 pl-4 smooth-scroll" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#projects" onclick="collapseNavbar()">Projects</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#tools" onclick="collapseNavbar()">Tools</a>
+		        <a class="nav-link pr-4 pl-4 smooth-scroll" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#tools" onclick="collapseNavbar()">Tools</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link pr-4 pl-4" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#contact" onclick="collapseNavbar()">Contact_Me</a>
+		        <a class="nav-link pr-4 pl-4 smooth-scroll" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#contact" onclick="collapseNavbar()">Contact_Me</a>
 		      </li>
 		    </ul>
 		  </div>
