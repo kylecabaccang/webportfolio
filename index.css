@@ -214,6 +214,11 @@ nav a {
 
 
 /*Contacts*/
+.highlight-email {
+  background-color: yellow;
+  font-weight: bold;
+}
+
 .contactsbackground {
 	background-color: #393646;
 	padding-top:10%;
