@@ -202,6 +202,60 @@ nav a {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.custom-img {
+  width: 100% !important;
+  height: 180px !important; /* Set your desired height here */
+  object-fit: cover;
+}
+
+.card-hoverable .card-inner {
+  perspective: 1000px;
+  transition: transform 0.6s;
+}
+
+.card-hoverable:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-hoverable .card-inner .card-front,
+.card-hoverable .card-inner .card-back {
+	padding-top:5%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card-hoverable .card-inner .card-front img,
+.card-hoverable .card-inner .card-front h5,
+.card-hoverable .card-inner .card-front h6 {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card-hoverable:hover .card-inner .card-front img,
+.card-hoverable:hover .card-inner .card-front h5,
+.card-hoverable:hover .card-inner .card-front h6 {
+  opacity: 0;
+}
+
+
+.card-hoverable .card-inner .card-back {
+  transform: rotateY(180deg);
+}
+
+.card-hoverable .card-inner .card-back .card-body {
+  display: none;
+}
+
+.card-hoverable:hover .card-inner .card-back .card-body {
+  display: block;
+}
+
+.card-hoverable:hover .card-inner .card-front {
+  display: none;
+}
+
 /*Footer*/
 .footerbackground {
 	font-family: 'Montserrat', sans-serif;
