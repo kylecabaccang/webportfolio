@@ -42,49 +42,18 @@
 
 		<link rel="icon" type="image/gif" href="./images/haloofthesun.png">
 
-		<script>
-		    function redirectToProject2() {
-		      window.location.href = "https://gitlab.com/b279-cabaccang/backend/-/tree/master/s42-s46_capstone_2";
-		    }
-
-		    function redirectToProject3() {
-		      window.location.href = "https://fullstack-1zw409ygk-capstone-3-cabaccang.vercel.app/";
-		    }
-
-		    // Function to collapse the navbar when a link is clicked
-		    function collapseNavbar() {
-		      var navbarCollapse = document.querySelector('.navbar-collapse');
-		      if (navbarCollapse.classList.contains('show')) {
-		        navbarCollapse.classList.remove('show');
-		      }
-		    }
-
-		    // Smooth scrolling when clicking on a link with the "smooth-scroll" class
-		      document.querySelectorAll('a.smooth-scroll').forEach(anchor => {
-		        anchor.addEventListener('click', function (e) {
-		          e.preventDefault();
-
-		          // Get the target element's ID from the href attribute
-		          const targetId = this.getAttribute('href');
-
-		          // Use the target ID to find the actual target element
-		          const target = document.querySelector(targetId);
-
-		          if (target) {
-		            // Calculate the distance from the top of the page to the target element
-		            const offsetTop = target.offsetTop;
-
-		            // Use the scrollIntoView API with behavior: 'smooth' for smooth scrolling
-		            window.scrollTo({
-		              top: offsetTop,
-		              behavior: 'smooth'
-		            });
-		          }
-		        });
-		      });
-		</script>
-
 		<title>Zedekiah Cabaccang - Portfolio</title>
+
+
+		<!-- JavaScript Codes -->
+		<script type="text/javascript" src="./index.js"></script>
+		<!-- EmailJS -->
+		  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		  <script type="text/javascript">
+		     (function(){
+		        emailjs.init("clHhgL-ZwzI5hUApo");
+		     })();
+		  </script>
 	</head>
 
 	<body>
@@ -1013,43 +982,30 @@
 			<!-- Contact Section Start -->
 			<section id="contact">
 				<div class="contactsbackground text-light min-vh-100 pb-3">
-
-					<div class="alert alert-warning mx-5" role="alert">
-					  Please email me directly @ <strong class="highlight-email">kylecabaccang@gmail.com</strong>; This "Get In Touch" section is still static and does not send an email directly to mine yet since this portfolio is a front-end project.
-					  	<div>
-					  		**This section is under construction and currently implementing ReactJS for a working email messaging through this form
-						</div>
-					</div>
-					
+				
 					<p class="mb-3 sections-subtitle">Get In Touch</p>
 						<p class="contact-invitation1 mb-5">If you love videogames and/or programming as much as I do.</p>
 						<!-- Container for Contact Me Section Start -->
 						<div class="container bg-dark col-sm-12 col-md-8 col-xl-4 pt-4 pb-4 rounded">
 							<p class="contact-invitation2">Love videogames and/or programming as much as I do? Let's talk about how awesome they are! We can code and play videogames afterwards!</p>
-							<form action="#">
+							<form>
 								<!-- Name Textbox -->
 							  <div class="form-group">
-							    <label for="FormControlInput1">Name</label>
-							    <input type="text" class="form-control" id="FormControlInput1" placeholder="Your Name" required disabled>
+							    <label for="fullName">Name</label>
+							    <input type="text" class="form-control" id="fullName" placeholder="Your Name" required>
 							  </div>
 
 							 	 <!-- Email Textbox -->
 							  <div class="form-group">
-							    <label for="FormControlInput2">Email address</label>
-							    <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com" required disabled>
-							  </div>
-
-							   <!-- Contact Number Textbox -->
-							  <div class="form-group">
-							    <label for="FormControlInput3">Contact Number</label>
-							    <input type="number" class="form-control" id="FormControlInput3" placeholder="+63 900 000 0000" required disabled>
+							    <label for="email_id">Email address</label>
+							    <input type="email" class="form-control" id="email_id" placeholder="name@example.com" required>
 							  </div>
 							  
 							  <div class="form-group">
-							    <label for="exampleFormControlTextarea1">Message</label>
-							    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required disabled></textarea>
+							    <label for="message">Message</label>
+							    <textarea class="form-control" id="message" rows="3" required></textarea>
 							  </div>
-							  	<button type="submit" class="btn btn-secondary text-light mb-2" disabled>Send Email</button>
+							  	<button onclick="SendMail()" class="btn btn-secondary text-light mb-2">Send Email</button>
 
 							</form>
 							
@@ -1065,8 +1021,6 @@
 				© 2023 Zedekiah Cabaccang
 			</footer>
 			<!-- Footer -->
-
-
 
 		<!-- Bootstrap JS Bundle CDN -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
